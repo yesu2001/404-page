@@ -1,38 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;800&family=Noto+Sans&family=Nunito+Sans&family=PT+Sans&family=Space+Mono&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .App {
-  text-align: center;
+  font-family: 'Space Mono', monospace;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+p {
+  padding: 10px 20px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 25px;
+  letter-spacing: -0.08em;
+  color: #333333;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+img {
+  width: 550px;
+}
+
+span {
+  color: #4F4F4F;
+  line-height: 30px;
+  width: 300px;
+  margin: 50px 0;
+}
+
+@media screen and (min-width: 400px) {
+  .BOX {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  img {
+    width: 300px;
+  }
+
+  b {
+    font-size: 10px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
